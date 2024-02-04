@@ -21,7 +21,7 @@ This is the backend API for a Auto Company system. It provides endpoints for man
 **3. Check if the database tables should be as follows:**
 ![demo](demo_screen_captures/car_spare_parts.png)
 
-###API Documentation
+### API Documentation
 http://127.0.0.1:8000/swagger/  
 
 **5. create sample customer**
@@ -29,6 +29,35 @@ http://127.0.0.1:8000/swagger/
 
 **6. get sample customer**
    ![demo](demo_screen_captures/get_customer_details.png)
-we can do other CRUD operation for customer
+   ***we can do other CRUD operation for customer***
 
 
+**5. create root category**
+![demo](demo_screen_captures/create_root_category.png)
+   ```bash
+   curl -X 'POST' \
+  'http://127.0.0.1/api/categories/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+  -d '{
+  "pid": 0,
+  "name": "Car Parts",
+  "status": "Active"
+}'
+   ```
+
+**5. create sample category under root**
+![demo](demo_screen_captures/sample_catgeory_under_root.png)
+   ```bash
+   curl -X 'POST' \
+     'http://127.0.0.1/api/categories/' \
+     -H 'accept: application/json' \
+     -H 'Content-Type: application/json' \
+     -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+     -d '{
+     "pid": 1,
+     "name": "Engine Components",
+     "status": "Active"
+   }'   
+   ```
