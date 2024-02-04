@@ -19,9 +19,6 @@ This is the backend API for a Auto Company system. It provides endpoints for man
 ![demo](demo_screen_captures/docker-composer_output.png)
 
 **3. Check if the database tables should be as follows:**
-![demo](demo_screen_captures/all_tables_indb.png)
-
-**4. ER Diagram**
 ![demo](demo_screen_captures/car_spare_parts.png)
 
 ###API Documentation
