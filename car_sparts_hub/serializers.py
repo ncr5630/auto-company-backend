@@ -91,24 +91,3 @@ class OrderItemCreateSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         quantity = validated_data['quantity']
         product_id = validated_data.get('product')
-
-        # if product_id:
-        #     try:
-        #         # Retrieve the product based on the provided ID
-        #         product = Product.objects.get(pk=product_id)
-        #         # Calculate unit_price based on the product's selling price
-        #         unit_price = product.sellingPrice if hasattr(product, 'sellingPrice') else 0.0
-        #         subtotal = unit_price * quantity
-        #
-        #         validated_data['unit_price'] = unit_price
-        #         validated_data['subtotal'] = subtotal
-        #
-        #         # Create the OrderItem
-        #         return OrderItem.objects.create(**validated_data)
-        #     except Product.DoesNotExist:
-        #         raise serializers.ValidationError({'product': ['Invalid product ID.']})
-        # else:
-        #     raise serializers.ValidationError({'product': ['Product ID is required.']})
-
-
-
