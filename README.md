@@ -49,7 +49,9 @@ http://127.0.0.1:8000/swagger/
    ```
 
 **8. Create sample category under root**
+
 ![demo](demo_screen_captures/sample_catgeory_under_root.png)
+
    ```bash
    curl -X 'POST' \
      'http://127.0.0.1/api/categories/' \
@@ -63,4 +65,33 @@ http://127.0.0.1:8000/swagger/
    }'   
    ```
 **9. Select all categories**
+
 ![demo](demo_screen_captures/category_list.png)
+
+**10. create sample product under added category**
+
+![demo](demo_screen_captures/create_sample_product.png)
+```text
+Hear auto-updating selling prices based on unit cost and profit percentage.
+
+```
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1/api/products/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+  -d '{
+  "productName": "Engine Oil Filter",
+  "description": "Engine Oil Filter",
+  "productUnits": "Number",
+  "unitCost": "450",
+  "profitPercentage": "35",
+  "createdBy": "1",
+  "status": "Active",
+  "category": 1
+}'
+```
+**11 Select all product list**
+
+![demo](demo_screen_captures/select_all_products.png)
