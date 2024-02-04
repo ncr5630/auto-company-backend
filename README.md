@@ -21,18 +21,19 @@ This is the backend API for a Auto Company system. It provides endpoints for man
 **3. Check if the database tables should be as follows:**
 ![demo](demo_screen_captures/car_spare_parts.png)
 
-### API Documentation
+**4. API Documentation**
 http://127.0.0.1:8000/swagger/  
+![demo](demo_screen_captures/all_endpoints.png)
 
-**5. create sample customer**
+**5. Create sample customer**
 ![demo](demo_screen_captures/create_sample_customer.png)
 
-**6. get sample customer**
+**6. List all customers**
    ![demo](demo_screen_captures/get_customer_details.png)
    ***we can do other CRUD operation for customer***
 
 
-**5. create root category**
+**7. Create root category**
 ![demo](demo_screen_captures/create_root_category.png)
    ```bash
    curl -X 'POST' \
@@ -47,7 +48,7 @@ http://127.0.0.1:8000/swagger/
 }'
    ```
 
-**5. create sample category under root**
+**8. Create sample category under root**
 ![demo](demo_screen_captures/sample_catgeory_under_root.png)
    ```bash
    curl -X 'POST' \
@@ -61,3 +62,5 @@ http://127.0.0.1:8000/swagger/
      "status": "Active"
    }'   
    ```
+**9. Select all categories**
+![demo](demo_screen_captures/category_list.png)
