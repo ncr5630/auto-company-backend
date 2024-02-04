@@ -95,7 +95,6 @@ class ProductListView(APIView):
         request_body=ProductCreateSerializer
     )
     def post(self, request, *args, **kwargs):
-        # serializer = ProductSerializer(data=request.data)
         serializer = ProductCreateSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
