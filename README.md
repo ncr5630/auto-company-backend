@@ -95,3 +95,57 @@ curl -X 'POST' \
 **11 Select all product list**
 
 ![demo](demo_screen_captures/select_all_products.png)
+
+**12 Update master stock**
+
+![demo](demo_screen_captures/create_master_stock.png)
+
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1/api/masterstock/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+  -d '{
+  "totalStock": "200",
+  "totalPurchase": "200",
+  "lastUpdateBy": "string",
+  "category": 2,
+  "product": 1
+}'
+```
+**13 Select master stock**
+![demo](demo_screen_captures/select_master_stock.png)
+
+**14 Create order**
+![demo](demo_screen_captures/create_order.png)
+
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1/api/orders/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+  -d '{
+  "order_date": "2024-02-04T06:47:09.964Z",
+  "delivery_date": "2024-02-04T06:47:09.964Z",
+  "is_ordered": true,
+  "customer": 1
+}'
+```
+
+**15 Add items for order**
+![demo](demo_screen_captures/add_items.png)
+```bash
+curl -X 'POST' \
+  'http://127.0.0.1/api/orders/1/items/' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -H 'X-CSRFToken: TcwUP6QHk9btbV9xUiuSTHKTLfVFIwL4YBAgwDevWaNsQDEnSfyXCzfrCkzjTDTE' \
+  -d '{
+  "product": 1,
+  "quantity": 20
+}'
+```
+**16 Select order id records**
+![demo](demo_screen_captures/select_order.png)
