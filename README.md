@@ -149,3 +149,7 @@ curl -X 'POST' \
 ```
 **16 Select order id records**
 ![demo](demo_screen_captures/select_order.png)
+
+**17 Test Cases running output**
+
+![demo](demo_screen_captures/test_cases_running.png)
