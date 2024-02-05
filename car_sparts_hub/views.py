@@ -100,9 +100,6 @@ class ProductListView(APIView):
     def get(self, request, *args, **kwargs):
         paginator = self.pagination_class()
         products = Product.objects.order_by('id')
-        page_number = request.query_params.get('page', 1)
-        page_size = request.query_params.get('page_size', self.pagination_class.page_size)
-
         result_page = paginator.paginate_queryset(products, request)
         serializer = ProductSerializer(result_page, many=True)
         return paginator.get_paginated_response({'products': serializer.data})
@@ -159,9 +156,6 @@ class MasterStockListView(APIView):
     def get(self, request, *args, **kwargs):
         paginator = self.pagination_class()
         master_stock = MasterStock.objects.order_by('id')
-        page_number = request.query_params.get('page', 1)
-        page_size = request.query_params.get('page_size', self.pagination_class.page_size)
-
         result_page = paginator.paginate_queryset(master_stock, request)
         serializer = MasterStockSerializer(result_page, many=True)
         return paginator.get_paginated_response({'master_stock': serializer.data})
