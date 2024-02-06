@@ -156,6 +156,8 @@ curl -X 'POST' \
 
 **17 Sample Categories and products for each category**
 ```text
+Root Category : Car Parts
+Sub Category under "Car Parts"
 1.Engine Components:
     Sample Products:
         Engine Oil Filter
