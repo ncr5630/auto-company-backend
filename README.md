@@ -89,7 +89,7 @@ curl -X 'POST' \
   "profitPercentage": "35",
   "createdBy": "1",
   "status": "Active",
-  "category": 1
+  "category": 2
 }'
 ```
 **11 Select all product list**
