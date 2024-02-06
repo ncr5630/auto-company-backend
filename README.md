@@ -153,3 +153,76 @@ curl -X 'POST' \
 **17 Test Cases running output**
 
 ![demo](demo_screen_captures/test_cases_running.png)
+
+**17 Sample Categories and products for each category
+```text
+1.Engine Components:
+    Sample Products:
+        Engine Oil Filter
+        Spark Plugs
+        Air Filter
+        Timing Belt
+        
+2.Brake System Parts:
+    Sample Products:
+        Brake Pads
+        Brake Discs/Rotors
+        Brake Calipers
+        Brake Fluid
+        
+3.Suspension and Steering:
+    Sample Products:
+        Shock Absorbers
+        Ball Joints
+        Tie Rod Ends
+        Control Arms
+        
+4.Electrical System:
+    Sample Products:
+        Car Batteries
+        Alternators
+        Starter Motors
+        Ignition Coils
+        
+5.Transmission and Drivetrain:
+    Sample Products:
+        Clutch Kit
+        Transmission Fluid
+        CV Joints
+        Drive Belts
+
+6.Exhaust System Components:
+    Sample Products:
+        Mufflers
+        Catalytic Converters
+        Exhaust Pipes
+        Oxygen Sensors
+        
+5.Filters and Fluids:
+    Sample Products:
+        Cabin Air Filters
+        Transmission Fluid
+        Power Steering Fluid
+        Coolant
+        
+6.Interior and Exterior Accessories:
+    Sample Products:
+        Car Floor Mats
+        Windshield Wipers
+        Seat Covers
+        Car Air Fresheners
+        
+7.Lighting and Bulbs:
+    Sample Products:
+        Headlight Bulbs
+        Brake Light Bulbs
+        Turn Signal Bulbs
+        Fog Lights
+
+8.Tires and Wheels:
+    Sample Products:
+        All-Season Tires
+        Alloy Wheels
+        Tire Pressure Monitoring System (TPMS) Sensors
+        Wheel Bearings
+```
