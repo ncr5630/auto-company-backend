@@ -154,7 +154,7 @@ curl -X 'POST' \
 
 ![demo](demo_screen_captures/test_cases_running.png)
 
-**17 Sample Categories and products for each category
+**17 Sample Categories and products for each category**
 ```text
 1.Engine Components:
     Sample Products:
